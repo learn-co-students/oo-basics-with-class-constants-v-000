@@ -9,6 +9,9 @@ class Shoe
     BRANDS << brand
     #you can remove duplicate elements in an arrray with .uniq(!)
     BRANDS.uniq!
+
+    #can also use this solution:
+    #BRANDS << brand unless BRANDS.include?(brand)
   end
 
   def cobble
