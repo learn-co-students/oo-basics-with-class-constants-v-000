@@ -7,7 +7,7 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand
-    BRANDS.uniq!
+    BRANDS.uniq! #we want unique dont want to show nike twice.
   end
 
   def cobble
