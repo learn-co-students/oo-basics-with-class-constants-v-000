@@ -4,7 +4,10 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
+    BRANDS.push(brand) unless BRANDS.include?(brand)
   end
+
+  BRANDS = ["Uggs", "Rainbow", "Nike"]
 
   def cobble
     self.condition = "new"
