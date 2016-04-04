@@ -8,6 +8,11 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS.include?(brand) ? return : BRANDS << brand
+
+    # the learn solution
+    # BRANDS << brand unless BRANDS.include?(brand)
+    # end learn solution
+
   end
 
   def cobble
