@@ -4,11 +4,12 @@ class Book
 
   GENRES = []
 
+
   def initialize(title)
     @title = title
   end
 
-  def turn_page
+  def page_turn()
     puts "Flipping the page...wow, you read fast!"
   end
 
@@ -16,5 +17,6 @@ class Book
     @genre = genre
     GENRES << genre
   end
+
 
 end
