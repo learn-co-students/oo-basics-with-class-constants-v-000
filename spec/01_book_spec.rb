@@ -1,5 +1,5 @@
 describe 'Book' do
- describe 'GENRES' do
+  describe 'GENRES' do
     it 'keeps track of all genres' do
       genres = ["Thriller", "Science Fiction", "Romance"]
       genres.each_with_index do |genre, i|
