@@ -1,9 +1,19 @@
+
+require 'set'
+
 class Shoe
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand
 
+  BRANDS = Set[]
+
   def initialize(brand)
     @brand = brand
+    BRANDS << brand
+  end
+
+  def brand=(brand)
+   # @brand = brand
   end
 
   def cobble
