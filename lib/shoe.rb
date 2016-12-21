@@ -1,14 +1,16 @@
 class Shoe
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand
-
-  def initialize(brand)
-    @brand = brand
-  end
-
-  def cobble
-    self.condition = "new"
-    puts "Your shoe is as good as new!"
-  end
-
+  
+  # create a class variable that will keep track of all of the brands
+  @@brands = []
+  
+  # each new shoe that gets created MUST have a brand
+  # NOTE: unique brands should be added to the class variable of brands
+  
+  
+  # how will Shoe.brands be able to retrieve all of those brands?
+  # REMEMBER: class methods start with self
+  
+  
 end

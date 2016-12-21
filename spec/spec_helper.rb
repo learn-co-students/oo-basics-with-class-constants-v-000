@@ -1,4 +1,3 @@
-require_relative '../lib/book'
 require_relative '../lib/shoe'
 
 RSpec.configure do |config|

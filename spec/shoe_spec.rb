@@ -1,6 +1,6 @@
 describe 'Shoe' do 
-  describe 'BRANDS' do
-    # Think about it! When does the BRANDS constant need to be
+  describe '@@brands' do
+    # Think about it! When does the @@brands class variable need to be
     # made aware of the brands of the shoes that are being created?
 
     it 'keeps track of all brands' do
@@ -10,18 +10,18 @@ describe 'Shoe' do
       end
 
       brands.each do |brand|
-        expect(Shoe::BRANDS).to include(brand)
+        expect(Shoe.brands).to include(brand)
       end
     end
 
     it 'only keeps track of unique brands' do
-      Shoe::BRANDS.clear
+      Shoe.brands.clear
       brands = ["Uggs", "Rainbow", "Nike", "Nike"]
       brands.each do |brand|
         Shoe.new(brand)
       end
 
-      expect(Shoe::BRANDS.size).to eq(3)
+      expect(Shoe.brands.size).to eq(3)
     end
   end
 end
