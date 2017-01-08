@@ -7,9 +7,8 @@ BRANDS = []
   def initialize(brand)
     @brand = brand
 
-    unless BRANDS.include? brand
-      BRANDS << brand
-    end
+    BRANDS << brand unless BRANDS.include? brand
+
 
   end
 
