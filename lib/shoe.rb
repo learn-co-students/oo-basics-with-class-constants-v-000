@@ -5,7 +5,11 @@ class Shoe
   BRANDS = []
   def initialize(brand)
     @brand = brand
+    unless BRANDS.include?(@brand)
+      binding.pry
     BRANDS << brand
+    binding.pry
+    end
   end
 
   def cobble
