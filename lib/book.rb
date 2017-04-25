@@ -17,7 +17,7 @@ def genre= genre
 
 end
 
-
+#stuff
 
 
   def turn_page
