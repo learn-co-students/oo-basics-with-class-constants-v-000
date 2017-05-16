@@ -8,15 +8,16 @@ class Shoe
     @brand = brand
     if BRANDS.include?(brand) == false
       BRANDS << brand
+    # or you could write it
+    #     BRANDS << brand unless BRANDS.include?(brand)
     end
 
   end
   # setter
-  def brands=(brands)
-    @brands = brands
-    BRANDS << brands
 
-  end
+
+
+
 
 
   def cobble
