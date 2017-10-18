@@ -6,7 +6,11 @@ BRANDS = []
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
+    brand.each_with_index do |brand_of_shoe_element, index|
+      if index/1 == 1
+      BRANDS << brand
+      end
+    end
   end
 
   def cobble
