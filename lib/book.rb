@@ -12,7 +12,7 @@ class Book
   
   def genre=(genre)
     @genre = genre
-    GENRES << genre
+    GENRES << genre # << means "add to the end of this array, i.e. add whatever value genre is to the array GENRES 
   end
   
   def turn_page
