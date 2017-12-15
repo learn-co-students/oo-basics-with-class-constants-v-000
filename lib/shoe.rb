@@ -3,7 +3,7 @@ class Shoe
   attr_reader :brand
   
   # create a class variable that will keep track of all of the brands
-  @@brands = []
+  
   
   # each new shoe that gets created MUST have a brand
   # NOTE: unique brands should be added to the class variable of brands
