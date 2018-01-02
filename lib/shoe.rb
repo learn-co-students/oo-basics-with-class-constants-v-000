@@ -11,7 +11,7 @@ class Shoe
   end
 
   def brand=(brand)
-    BRANDS.length - 1
+    BRANDS = BRANDS.uniq
   end
 
   def cobble
