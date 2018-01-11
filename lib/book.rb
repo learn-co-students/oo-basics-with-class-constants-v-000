@@ -10,7 +10,6 @@ GENRES = []
     @genre = genre
     GENRES << genre
   end
-end
 
 
   def turn_page
