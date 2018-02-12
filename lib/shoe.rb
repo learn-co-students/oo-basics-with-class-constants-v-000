@@ -1,3 +1,5 @@
+require 'pry'
+
 class Shoe
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand
@@ -6,11 +8,16 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
+    if BRANDS.include? @brand
+    else
+      BRANDS << @brand
+    end
   end
+
+  # binding.pry
 
   def brand=(brand)
     @brand = brand
-    BRANDS << brand
   end
 
   def cobble
