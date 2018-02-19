@@ -11,6 +11,7 @@ class Shoe
 
     if BRANDS.none?{|b|  b == brand }
       BRANDS << brand
+      #BRANDS << brand unless BRANDS.include?(brand)
     end
 
 end
