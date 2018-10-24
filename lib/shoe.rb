@@ -7,6 +7,7 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand unless BRANDS.include?(brand)
+    # unless - it executes whatever it contains if the condition is not true.
   end
 
   def cobble
