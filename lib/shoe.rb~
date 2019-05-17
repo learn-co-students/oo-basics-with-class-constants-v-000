@@ -21,9 +21,7 @@ class Shoe
 	
 end
 
-=begin
 shoe_0 = Shoe.new("Uggs")
 shoe_1 = Shoe.new("Rainbow")
 shoe_2 = Shoe.new("Nike")
 shoe_3 = Shoe.new("Nike")
-=end
