@@ -1,4 +1,4 @@
-describe 'Book' do
+puts describe 'Book' do
  describe 'GENRES' do
     it 'keeps track of all genres' do
       genres = ["Thriller", "Science Fiction", "Romance"]
@@ -7,7 +7,7 @@ describe 'Book' do
         book.genre = genre
       end
 
-      genres.each do |genre|
+  puts   describe genres.each do |genre|
         expect(Book::GENRES).to include(genre)
       end
     end
