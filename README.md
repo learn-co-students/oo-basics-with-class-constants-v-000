@@ -118,7 +118,7 @@ So, let's do that!
 # book.rb
 
 class Book
-  attr_accessor :author, :page_count  # remove the attr_accessor for genre
+  attr_accessor :author, :page_count,  # remove the attr_accessor for genre
   attr_reader :title, :genre  # add an attr_reader for genre
 
   GENRES = []
