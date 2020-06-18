@@ -1,3 +1,4 @@
+require 'pry'
 describe 'Book' do
  describe 'GENRES' do
     it 'keeps track of all genres' do
