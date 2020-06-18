@@ -1,4 +1,4 @@
-describe 'Shoe' do 
+midescribe 'Shoe' do 
   describe 'BRANDS' do
     # Think about it! When does the BRANDS constant need to be
     # made aware of the brands of the shoes that are being created?
