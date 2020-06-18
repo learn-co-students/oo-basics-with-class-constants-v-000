@@ -2,9 +2,23 @@ class Shoe
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand
 
+  BRANDS=[]
+
   def initialize(brand)
     @brand = brand
+    if BRANDS.include?(brand) == false
+      BRANDS << brand
+    # or you could write it
+    #     BRANDS << brand unless BRANDS.include?(brand)
+    end
+
   end
+  # setter
+
+
+
+
+
 
   def cobble
     self.condition = "new"
@@ -12,3 +26,5 @@ class Shoe
   end
 
 end
+
+# =>      learn spec/02_shoe_spec.rb
