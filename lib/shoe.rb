@@ -4,7 +4,14 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
+    if BRANDS.any? {|x| x == brand}
+    
+    else 
+      BRANDS << brand
+    end 
   end
+  
+  BRANDS = []
 
   def cobble
     self.condition = "new"
